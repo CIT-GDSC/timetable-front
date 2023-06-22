@@ -1,6 +1,8 @@
 import React from 'react'
-import { AiFillDashboard } from 'react-icons/ai'
-import { CgProfile } from 'react-icons/cg'
+import { AiFillDashboard } from 'react-icons/ai';
+import { CgProfile } from 'react-icons/cg';
+import { IoMdPeople } from 'react-icons/io'
+import { PiChalkboardTeacherBold } from 'react-icons/pi'
 const Dashboard = () => {
   return (
     <section className='container'>
@@ -13,7 +15,18 @@ const Dashboard = () => {
         </div>
         <section className="options">
           <div className="option">
-            <p><CgProfile className='dash-icon' />Profile</p>
+            <CgProfile className='dash-icon' />
+            <p>Profile</p>
+          </div>
+          <div className="option">
+            <PiChalkboardTeacherBold className='dash-icon' />
+            <p>Trainers</p>
+          </div>
+          <div className="option">
+            <p><IoMdPeople className='dash-icon' />ClassMates</p>
+          </div>
+          <div className="option">
+            <p><IoMdPeople className='dash-icon' />Profile</p>
           </div>
         </section>
       </div >
