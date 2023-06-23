@@ -8,7 +8,7 @@ import { GiArchiveRegister } from 'react-icons/gi'
 import { MdOutlineWhatsapp } from 'react-icons/md'
 import { MdAdUnits } from 'react-icons/md'
 import { BsTable } from 'react-icons/bs'
-import { TbMathXy } from 'react-icons/tb'
+import { SiVisualstudiocode } from 'react-icons/si'
 
 
 const Dashboard = () => {
@@ -71,15 +71,59 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="bottom">
-          <article className="timetable">
-            <div className="time">8:00 AM</div>
-            <div className="unit">
-              <div className="unit-icon dash-icon"><TbMathXy/></div>
-              <div className="unit-name">Information</div>
-              <div className="unit- lecturer"></div>
-            </div>
-          </article>
+        <div className="t-details">
+          <div className="bottom">
+            <article className="timetable">
+              <div className="timetable-right"><span>08:00</span></div>
+              <div className="timetable-center">
+                <p className="unit-name">OOP</p>
+                <p className="unit-code">011o</p>
+                <p className="time">
+                  08:00 - 10:00
+                </p>
+              </div>
+              <div className="timetable-left">Jillo</div>
+            </article>
+          </div>
+          <div className="bottom">
+            <article className="timetable react">
+              <div className="timetable-right"><span>13:00</span></div>
+              <div className="timetable-center">
+                <p className="unit-name">QT</p>
+                <p className="unit-code">Qt09101</p>
+                <p className="time">
+                  13:00 - 15:00
+                </p>
+              </div>
+              <div className="timetable-left">Slavian</div>
+            </article>
+          </div>
+          <div className="bottom">
+            <article className="timetable angular">
+              <div className="timetable-right"><span>08:00</span></div>
+              <div className="timetable-center">
+                <p className="unit-name">Visual Basics</p>
+                <p className="unit-code">VBC 101</p>
+                <p className="time">
+                  08:00 - 10:00
+                </p>
+              </div>
+              <div className="timetable-left">Morris</div>
+            </article>
+          </div>
+          <div className="bottom">
+            <article className="timetable vue">
+              <div className="timetable-right"><span>08:00</span></div>
+              <div className="timetable-center">
+                <p className="unit-name">SAD</p>
+                <p className="unit-code"> 209 SAD</p>
+                <p className="time">
+                  08:00 - 10:00
+                </p>
+              </div>
+              <div className="timetable-left">Eddar</div>
+            </article>
+          </div>
         </div>
       </div>
       {/* right */}
