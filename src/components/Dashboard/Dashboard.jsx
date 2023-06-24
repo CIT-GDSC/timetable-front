@@ -9,6 +9,8 @@ import { MdOutlineWhatsapp } from 'react-icons/md'
 import { MdAdUnits } from 'react-icons/md'
 import { BsTable } from 'react-icons/bs'
 import { SiVisualstudiocode } from 'react-icons/si'
+import { IoNotificationsOutline } from 'react-icons/io5'
+import { AiOutlineSearch } from 'react-icons/ai'
 
 
 const Dashboard = () => {
@@ -53,7 +55,7 @@ const Dashboard = () => {
         </section>
       </div >
       {/* center */}
-      <div className="center">
+      <section className="center">
         <div className="top">
           <div className="username">
             <h3>Hello, User</h3>
@@ -77,7 +79,7 @@ const Dashboard = () => {
               <div className="timetable-right"><span>08:00</span></div>
               <div className="timetable-center">
                 <p className="unit-name">OOP</p>
-                <p className="unit-code">011o</p>      
+                <p className="unit-code">011o</p>
                 <p className="time">
                   08:00 - 10:00
                 </p>
@@ -125,9 +127,23 @@ const Dashboard = () => {
             </article>
           </div>
         </div>
-      </div>
+      </section>
       {/* right */}
-      <div className="right" > right</div >
+      <section className="right" >
+        <div className="fns-right">
+          <div className='date-fns'>
+            <span className="day">Monday</span>
+            <span className="month"> July </span>
+            <span className="year"> 2021</span>
+          </div>
+          <div className="notification">
+            <div className="bell">
+              <IoNotificationsOutline className='dash-icon' />
+            </div>
+            <span className="badge">2</span>
+          </div>
+        </div>
+      </section>
     </section >
   )
 }

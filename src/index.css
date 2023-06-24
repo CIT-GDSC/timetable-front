@@ -118,11 +118,6 @@
   font-family: var(--fonts-title);
 }
 
-.right {
-  width: 50%;
-  background-color: var(--color--primary--light);
-}
-
 .date-time {
   position: relative;
   top: 40px;
@@ -196,4 +191,42 @@ span {
 
 .angular {
   background-color: var(--color--primary--shadow-pink);
+}
+.right {
+  width: 50%;
+  border-left: 2px solid;
+}
+
+.fns-right{
+  display: flex;
+  justify-content: space-around;
+}
+.date-fns span{
+  position: relative;
+  top: 20px;
+  border-bottom: 1px solid var(--color--primary--dark);
+}
+.bell{
+  background-color: #ddb0ba;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge{
+  background-color:  var(--color--primary--green);
+
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -40px;
+  left: 30px;
+  font-size: 12px;
+  font-weight: 600;
 }
