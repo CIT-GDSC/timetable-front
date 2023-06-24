@@ -35,7 +35,7 @@ const Dashboard = () => {
           </div>
           <div className="option">
             <IoMdPeople className='dash-icon' />
-            <p>ClassMates</p>
+            <p>Discussion Groups</p>
           </div>
           <div className="option">
             <BsTable className='dash-icon' />
