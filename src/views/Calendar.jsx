@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Calendar } from 'react-calendar'
+// const [date, setDate] = useState(new Date())
 
-const Calendar = () => {
+const Session = () => {
   return (
-      <div>
-          
-    </div>
+      <div className="app">
+          <div className="calendar-container">
+              <Calendar />
+          </div>
+      </div>
   )
 }
 
-export default Calendar
+export default Session;

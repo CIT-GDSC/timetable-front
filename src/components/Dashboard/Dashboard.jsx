@@ -12,6 +12,7 @@ import { SiVisualstudiocode } from 'react-icons/si'
 import { IoNotificationsOutline } from 'react-icons/io5'
 import { AiOutlineSearch } from 'react-icons/ai'
 
+import Session from '../../views/Calendar';
 
 const Dashboard = () => {
   return (
@@ -142,6 +143,34 @@ const Dashboard = () => {
             </div>
             <span className="badge">2</span>
           </div>
+          <div className="search">
+            <div className="bell">
+              <AiOutlineSearch className='dash-icon' />
+            </div>
+          </div>
+        </div>
+        <div className="profile-calendar">
+          <article className="calendar">
+            <Session />
+          </article>
+          <br />
+          <hr />
+          <article className="profile">
+            <div className="left-details">
+              <div className="profile-pic">
+                <img src="https://via.placeholder.com/150" alt="profile" />
+              </div>
+              <div className="profile-name">
+                <h3>Gibsons</h3>
+                <p>Student</p>
+                <p>Computer Science</p>
+                <p>Module: 2</p>
+              </div>
+            </div>
+            <div className="right-details">
+              <p>Logout </p>
+            </div>
+          </article>
         </div>
       </section>
     </section >
