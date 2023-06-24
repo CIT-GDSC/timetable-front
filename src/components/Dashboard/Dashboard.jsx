@@ -77,7 +77,7 @@ const Dashboard = () => {
               <div className="timetable-right"><span>08:00</span></div>
               <div className="timetable-center">
                 <p className="unit-name">OOP</p>
-                <p className="unit-code">011o</p>
+                <p className="unit-code">011o</p>      
                 <p className="time">
                   08:00 - 10:00
                 </p>
