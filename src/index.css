@@ -61,6 +61,7 @@
 
 .left .logo img {
   width: 50%;
+  border-radius:  50%;
 }
 
 .separator {
@@ -253,7 +254,7 @@ span {
 }
 .right-details p:hover{
   color: var(--color--primary--bright);
-  
+
 }
 .profile-pic img{
   width: 100px;
