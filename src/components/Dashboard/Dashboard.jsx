@@ -1,3 +1,4 @@
+//eslint-disable-next-line
 import React from 'react'
 
 import { AiFillDashboard } from 'react-icons/ai';
@@ -8,9 +9,10 @@ import { GiArchiveRegister } from 'react-icons/gi'
 import { MdOutlineWhatsapp } from 'react-icons/md'
 import { MdAdUnits } from 'react-icons/md'
 import { BsTable } from 'react-icons/bs'
-import { SiVisualstudiocode } from 'react-icons/si'
 import { IoNotificationsOutline } from 'react-icons/io5'
 import { AiOutlineSearch } from 'react-icons/ai'
+
+import { Link } from 'react-router-dom'
 
 import Session from '../../views/Calendar';
 
@@ -27,7 +29,7 @@ const Dashboard = () => {
         <section className="options">
           <div className="option">
             <CgProfile className='dash-icon' />
-            <p>Profile</p>
+            <p><Link to="/profile" className='links'>Profile</Link></p>
           </div>
           <div className="option">
             <PiChalkboardTeacherBold className='dash-icon' />
