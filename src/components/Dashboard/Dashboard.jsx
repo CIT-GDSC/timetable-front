@@ -33,27 +33,27 @@ const Dashboard = () => {
           </div>
           <div className="option">
             <PiChalkboardTeacherBold className='dash-icon' />
-            <p>Trainers</p>
+            <p><Link to="/trainers" className='links'>Trainers</Link></p>
           </div>
           <div className="option">
             <IoMdPeople className='dash-icon' />
-            <p>Discussion Groups</p>
+            <p><Link to="/classgroups" className='links'>Groups</Link></p>
           </div>
           <div className="option">
             <BsTable className='dash-icon' />
-            <p>TimeTable</p>
+            <p><Link to="/timetable" className='links'>TimeTable</Link></p>
           </div>
           <div className="option">
             <GiArchiveRegister className='dash-icon' />
-            <p>Attendances</p>
+            <p><Link to="/clubs" className='links'>Social Clubs</Link></p>
           </div>
           <div className="option">
             <MdAdUnits className='dash-icon' />
-            <p>My units</p>
+            <p><Link className='links' to="/units">Units</Link></p>
           </div>
           <div className="option">
             <MdOutlineWhatsapp className='dash-icon' />
-            <p>Class group</p>
+            <p><Link className='links' to="externals">Class group</Link></p>
           </div>
         </section>
       </div >
