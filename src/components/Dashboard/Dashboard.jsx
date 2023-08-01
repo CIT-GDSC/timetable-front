@@ -14,7 +14,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 
 import { Link } from 'react-router-dom'
 
-import Session from '../../views/Calendar';
+import Session from '../../views/Calendar/Calendar';
 
 const Dashboard = () => {
   return (
