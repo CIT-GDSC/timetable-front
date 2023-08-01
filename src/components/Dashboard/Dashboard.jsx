@@ -1,5 +1,8 @@
 //eslint-disable-next-line
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
+
+
 
 import { AiFillDashboard } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
@@ -11,12 +14,21 @@ import { MdAdUnits } from 'react-icons/md'
 import { BsTable } from 'react-icons/bs'
 import { IoNotificationsOutline } from 'react-icons/io5'
 import { AiOutlineSearch } from 'react-icons/ai'
-
 import { Link } from 'react-router-dom'
 
 import Session from '../../views/Calendar/Calendar';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  useEffect(()=>{
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    console.log(userAgent)
+   if(/(android|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent)){
+     navigate('/redirects')
+
+   }
+
+  },[navigate])
   return (
     <section className='container'>
       <div className="left">
