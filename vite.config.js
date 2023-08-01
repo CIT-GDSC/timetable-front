@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 import fs from "fs/promises"
 export default defineConfig(() => ({
+  server: {
+    host: true
+  },
   esbuild: {
     loader: "jsx",
     include: /src\/.*\.jsx?$/,

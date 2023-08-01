@@ -10,6 +10,7 @@ import Timetable from './components/Timetable/Timetable.jsx'
 import Trainers from './components/Trainers/Trainers.jsx'
 import Units from './components/Units/Units.jsx'
 import SocialClubs from './components/Clubs/SocialClubs.jsx'
+import Redirects from './pages/Redirects';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='trainers' element={<Trainers />} />
         <Route path='units' element={<Units />} />
         <Route path='clubs' element={<SocialClubs/>} />
+        <Route path='/redirects' element={<Redirects />} />
       </Routes>
     </div>
   )
