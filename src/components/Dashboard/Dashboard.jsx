@@ -1,7 +1,6 @@
 //eslint-disable-next-line
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-
 
 
 import { AiFillDashboard } from 'react-icons/ai';
@@ -17,18 +16,21 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 import Session from '../../views/Calendar/Calendar';
+import { useStateContext } from '../../context';
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  useEffect(()=>{
+  const { user } = useStateContext();
+
+  useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     console.log(userAgent)
-   if(/(android|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent)){
-     navigate('/redirects')
+    if (/(android|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent)) {
+      navigate('/redirects')
 
-   }
+    }
 
-  },[navigate])
+  }, [navigate])
   return (
     <section className='container'>
       <div className="left">
@@ -73,7 +75,7 @@ const Dashboard = () => {
       <section className="center">
         <div className="top">
           <div className="username">
-            <h3>Hello, User</h3>
+            <h3>Hello, {user.name}</h3>
             <div className="date-time">
               <div className="top-left">
                 <h1 className='title'>Timetable</h1>
