@@ -23,27 +23,27 @@ const App = () => {
 
   React.useEffect(() => {
     if (!token) {
-      navigate('/login');
+      navigate('/auth');
     }
   }, [token, navigate]);
   return (
     <div>
       <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/classgroups" element={<Discussions />} />
-          <Route path='/externals' element={<Links />} />
-          <Route path='/timetable' element={<Timetable />} />
-          <Route path='trainers' element={<Trainers />} />
-          <Route path='units' element={<Units />} />
-          <Route path='clubs' element={<SocialClubs />} />
-          <Route path='/redirects' element={<Redirects />} />
-          <Route path="/login" element={<Login />} />
-          <Route path='/login/register' element={<Signup />} />
-          {/* nested auth route */}
-          <Route path='/auth' element={<Authlayout />} />
-        </Routes>
-
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/classgroups" element={<Discussions />} />
+        <Route path='/externals' element={<Links />} />
+        <Route path='/timetable' element={<Timetable />} />
+        <Route path='trainers' element={<Trainers />} />
+        <Route path='units' element={<Units />} />
+        <Route path='clubs' element={<SocialClubs />} />
+        <Route path='/redirects' element={<Redirects />} />
+        {/* nested auth route */}
+        <Route path='/auth' element={<Authlayout />}>
+          <Route path="/auth/login" element={<Login />} />
+          <Route path='/auth/register' element={<Signup />} />
+        </Route>
+      </Routes>
     </div>
   )
 }

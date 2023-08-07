@@ -1,6 +1,6 @@
 //eslint-disable-next-line
 import React from 'react'
-import { Link } from 'react-router-dom';
+
 
 const Login = () => {
   return (
@@ -11,8 +11,7 @@ const Login = () => {
         <input type="text" name="name" id="name" />
         <label htmlFor="password">Password: </label>
         <input type="password" name="password" id="password" />
-        <button type="submit" className='submit'>Login</button>
-        <p>Dont have an account? <Link to='/register'>Sign up</Link></p>
+        <button type="submit" className='submit'>Request</button>
       </form>
     </aside>
   ) 

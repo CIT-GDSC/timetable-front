@@ -1,11 +1,13 @@
 //eslint-disable-next-line
 import React from 'react'
+import { Outlet } from 'react-router-dom';
+
+
 
 const Authlayout = () => {
   return (
     <div>
-      <h1>Authlayout</h1>
-      
+      <Outlet/>
     </div>
   )
 }
