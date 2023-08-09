@@ -1,21 +1,37 @@
 //eslint-disable-next-line
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import { useStateContext } from '../context';
+import { Link } from 'react-router-dom'
+
 
 const Signup = () => {
-  const { token } = useStateContext();
-  const navigate = useNavigate();
-
-  //redirects to dashboard if token exists
-  React.useEffect(() => {
-    if (token) {
-      navigate("/");
-    }
-  }, [token, navigate]); 
-
   return (
-    <div>Signup</div>
+    <aside className="register-container">
+      <form>
+        <p>Register An Account</p>
+        <label htmlFor="name">Username: </label>
+        <input type="text" name="name" id="name" />
+
+        <label htmlFor="firstName">FirstName: </label>
+        <input type="text" name="firstName" id="firstName" />
+
+        <label htmlFor="lastName">LastName: </label>
+        <input type="text" name="lastName" id="lastName" />
+
+        <label htmlFor="email">Email: </label>
+        <input type="text" name="email" id="email" />
+
+        <label htmlFor="password">Password: </label>
+        <input type="password" name="password" id="password" />
+
+        <label htmlFor="confirmPassword">Confirm Password: </label>
+        <input type="password" name="confirmPassword" id="confirmPassword" />
+
+        <button type="submit">Register</button>
+
+        <p>Have an account? <Link to={'/login'} >Login</Link></p>
+      </form>
+
+    </aside>
   )
 }
 
