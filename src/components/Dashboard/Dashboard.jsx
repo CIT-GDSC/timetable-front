@@ -24,12 +24,12 @@ const Dashboard = () => {
 
   useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    console.log(userAgent)
-    if (/(android|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent)) {
-      navigate('/redirects')
-
+    // console.log(userAgent)
+    if (
+      /(android|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent)
+    ) {
+      navigate("/redirects");
     }
-
   }, [navigate])
   return (
     <section className='container'>
