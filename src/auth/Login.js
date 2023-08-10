@@ -6,7 +6,6 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { login, reset } from '../features/auth/authSlice';
 import Loading from '../views/Loading/Loading';
-// import { useStateContext } from '../Context';
 
 const Login = () => {
 
@@ -19,7 +18,6 @@ const Login = () => {
     password: ""
   });
 
-  // const { name, password } = FormData
 
   React.useEffect(() => {
     if (isError) {
@@ -40,7 +38,6 @@ const Login = () => {
     if (login.fulfilled.match(response)) {
       const user = response.payload;
       const sessionToken = user.authentication.sessionToken
-      // console.log(sessionToken)
       localStorage.setItem('ACCESS_TOKEN', sessionToken);
       navigate('/timetable')
     }
