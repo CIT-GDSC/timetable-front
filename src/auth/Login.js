@@ -24,7 +24,6 @@ const Login = () => {
       toast.error(message);
     }
     if (isSuccess || user) {
-      // navigate('/timetable')
       toast.success("success")
     }
     dispatch(reset())

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Dosis:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap");
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /*  root variables */
 :root {
@@ -33,7 +33,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-input{
+input {
   outline: 0px;
 }
 
@@ -521,7 +521,7 @@ span {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 140, 255));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 140, 255));
 }
 
 .auth-container form {
@@ -542,13 +542,13 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.auth-container p{
+.auth-container p {
   font-size: 1.2rem;
   font-family: var(--fonts-title);
   margin-bottom: 20px;
 }
 
-.auth-container label{
+.auth-container label {
   font-size: 1.2rem;
   font-family: var(--fonts-title);
   margin-bottom: 20px;
@@ -585,7 +585,7 @@ span {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 140, 255));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 140, 255));
 }
 
 .register-container form {
@@ -606,13 +606,13 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.register-container p{
+.register-container p {
   font-size: 1.2rem;
   font-family: var(--fonts-title);
   margin-bottom: 20px;
 }
 
-.register-container label{
+.register-container label {
   font-size: 1.2rem;
   font-family: var(--fonts-title);
 }
@@ -624,7 +624,7 @@ span {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
-  
+
 }
 
 .register-container button {
@@ -645,7 +645,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust this to center the spinner vertically */
+  height: 100vh;
+  /* Adjust this to center the spinner vertically */
 }
 
 .loading-spinner {
@@ -658,18 +659,44 @@ span {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+
+/* Navbar */
 nav{
+  background-color: #1B1C1D;
+  color: var(--color--primary--text);
+  display: inline-flex;
+  width: 100%;
+  gap: 200px;
+  
+}
+.nav-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  height: 70px;
-  background-color: var(--color--primary--dark);
-  color: var(--color--primary--text);
+  width: 100%;
+  padding: 20px;
+}
+.nav-links .dashboard{
   font-family: var(--fonts-title);
-  font-size: 1.2rem;
+  background-color: #1087ff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.nav-links p:hover {
+  cursor: pointer;
 }
