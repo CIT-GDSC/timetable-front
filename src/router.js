@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             { path: 'Dashboard', element: <Dashboard /> },
             { path: 'Profile', element: <Profile /> },
             { path: 'Discussions', element: <Discussions /> },
-            { path: 'SocialClubs', element: <SocialClubs /> },
+            { path: 'Clubs', element: <SocialClubs /> },
             { path: 'Units', element: <Units /> },
             { path: 'Trainers', element: <Trainers /> },
             { path: 'Redirects', element: <Redirects /> },
