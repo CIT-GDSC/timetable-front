@@ -10,7 +10,8 @@ const DefaultLayout = () => {
   // const { token } = useStateContext();
   const token = localStorage.getItem('ACCESS_TOKEN');
   console.log(token)
-  if (!token) {
+  //temporary configrations for d
+  if (token) {
     return <Navigate to='/login' />
   }
   return (

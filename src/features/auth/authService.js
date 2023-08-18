@@ -10,7 +10,7 @@ const register = async (userData) => {
     return response.data;
 } 
 
-
+//FIXME: change the 'user' in local storage to match 'cookie variable'
 const login = async (userData) => {
     const response = await axios.post("http://localhost:5000/auth/login", userData);
     if (response.data) {

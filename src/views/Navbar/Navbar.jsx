@@ -11,7 +11,8 @@ const Navbar = () => {
                 <h1>Logo</h1>
             </div>
             <div className="nav-links">
-                <p className='dashboard'>Dashboard</p>
+                <p className='dashboard'>
+                <Link to='/Dashboard'></Link>Dashboard</p>
                 <p><Link to='/Discussion'></Link>Groups</p>
                 <p><Link to='/Timetable'></Link>Timetable</p>
                 <p><Link to='/Discussions'></Link>Class Groups</p>
