@@ -26,13 +26,13 @@ const router = createBrowserRouter([
         children: [
             { path: '/', element: <Navigate to="/Timetable" /> },
             { path: '/Timetable', element: <Timetable /> },
-            { path: 'Dashboard', element: <Dashboard /> },
-            { path: 'Profile', element: <Profile /> },
-            { path: 'Discussions', element: <Discussions /> },
-            { path: 'SocialClubs', element: <SocialClubs /> },
-            { path: 'Units', element: <Units /> },
-            { path: 'Trainers', element: <Trainers /> },
-            { path: 'Redirects', element: <Redirects /> },
+            { path: '/Dashboard', element: <Dashboard /> },
+            { path: '/Profile', element: <Profile /> },
+            { path: '/Discussions', element: <Discussions /> },
+            { path: '/Clubs', element: <SocialClubs /> },
+            { path: '/Units', element: <Units /> },
+            { path: '/Trainers', element: <Trainers /> },
+            { path: '/Redirects', element: <Redirects /> },
 
         ]
     },
