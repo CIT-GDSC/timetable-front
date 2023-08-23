@@ -20,7 +20,8 @@
         font-size: 20px;
         flex-direction: column;
     }
-    .left{
+
+    .left {
         width: 50%;
         background-color: #ffffff;
         height: 90vh;
@@ -28,7 +29,7 @@
         border-radius: 20px;
         position: relative;
 
-        .search{
+        .search {
             //background-color: #f5f5f5;
             position: relative;
             top: 20px;
@@ -39,14 +40,52 @@
             justify-content: space-between;
             padding: 10px;
             border-radius: 20px;
-            
-            input{
+
+            input {
                 outline: none;
                 border: none;
                 background-color: #f5f5f5;
             }
-            .find{
+
+            .find {
                 cursor: pointer;
+            }
+        }
+
+        .incoming {
+            position: relative;
+            top: 40px;
+            left: 20px;
+            width: 90%;
+            height: 70vh;
+            background-color: #f5f5f5;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            
+            h3{
+                color: #000;
+                align-self: center;
+            }
+            .incoming-activities{
+                display: grid;
+                grid-template-columns: auto auto;
+                
+                .activity{    
+                    padding: 20px;
+                    border-radius: 20px;
+                    background-color: #fff;
+                    width: 250px;
+                    margin-bottom: 20px;
+
+                    .time{
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }

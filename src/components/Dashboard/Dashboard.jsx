@@ -8,20 +8,11 @@ import { CgProfile } from 'react-icons/cg';
 import { IoMdPeople } from 'react-icons/io'
 import { PiChalkboardTeacherBold } from 'react-icons/pi'
 import { GiArchiveRegister } from 'react-icons/gi'
-// import { MdOutlineWhatsapp } from 'react-icons/md'
-// import { MdAdUnits } from 'react-icons/md'
-// import { BsTable } from 'react-icons/bs'
-// import { IoNotificationsOutline } from 'react-icons/io5'
-// import { AiOutlineSearch } from 'react-icons/ai'
-// import { Link } from 'react-router-dom'
 
-// import Session from '../../views/Calendar/Calendar';
-// import { useStateContext } from '../../context';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  // const { user } = useStateContext();
 
   useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -45,6 +36,104 @@ const Dashboard = () => {
         <div className="search">
           <input type="text" />
           <AiOutlineSearch className='find' />
+        </div>
+        <br />
+        <br />
+        <hr />
+        <div className="incoming">
+          <h3>Incoming classess</h3>
+
+          <div className="incoming-activities">
+
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+            <div className="activity">
+              <div className="activity-title">
+                <h4>Mathematics</h4>
+                <p className='time'>10:00am - 11:00am</p>
+                Teacher- <span>Mr. John Doe</span>
+                <p>Venue: Lrx-7</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
